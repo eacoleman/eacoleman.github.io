@@ -13,14 +13,11 @@ function onWindowResize() {
 
 
   if(window.mobileCheck()) {
-    //$("#eac-nav").height('7%');
     $(".eac-name-container p").css("font-size", 63 + 'px');
     $(".eac-header").css("background-position", '0px 0px');
-    //$("#eac-nav .eac-name-container p").css("top", '-40%');
     
     $("#eac-body .eac-content-container").css("font-size",'38px');
     $("#eac-body .eac-content-container .eac-header").height('450px');
-    //$(".eac-content-container").css("top",$("#eac-nav").height() + 'px');
 
     $(".eac-header h1").css("color",'transparent');
     $(".eac-header h3").css("color",'transparent');
@@ -79,9 +76,6 @@ function navComplete() {
 }
 
 $(window).load(function() {
-  // make the scrollbar in the home window, work window
-  //$("#CV").perfectScrollbar();
-
   // make sure the content body has the proper width
   $(".eac-content-body").width(($(".eac-content-container").width() - 60) + 'px');
 
