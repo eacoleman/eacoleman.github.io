@@ -14,12 +14,13 @@ function onWindowResize() {
 
   if(window.mobileCheck()) {
     //$("#eac-nav").height('7%');
-    $("#eac-nav .eac-name-container p").css("font-size", ($("#eac-nav").height()*0.5) + 'px');
+    $(".eac-name-container p").css("font-size", 63 + 'px');
+    $(".eac-header").css("background-position", '0px 0px');
     //$("#eac-nav .eac-name-container p").css("top", '-40%');
     
-    $("#eac-body .eac-content-container").css("font-size",'40px');
-    $("#eac-body .eac-content-container .eac-header").height('30%');
-    $(".eac-content-container").css("top",$("#eac-nav").height() + 'px');
+    $("#eac-body .eac-content-container").css("font-size",'38px');
+    $("#eac-body .eac-content-container .eac-header").height('450px');
+    //$(".eac-content-container").css("top",$("#eac-nav").height() + 'px');
 
     $(".eac-header h1").css("color",'transparent');
     $(".eac-header h3").css("color",'transparent');
