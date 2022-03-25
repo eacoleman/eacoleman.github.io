@@ -23,32 +23,26 @@ body {
     background: #EDEFE5;
 }
 
-#eac-nav {
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    max-height: 1800px;
-    background: rgb(40, 58, 62);
-    box-shadow: 0px 0px 15px #444;
-    z-index: 2;
-    overflow-x: hidden;
-    overflow-y:hidden;
-}
-
-#eac-nav .eac-name-container {
-    position: absolute;
-    left: 25px;
+.eac-name-container {
+    position: relative;
+    float: bottom;
+    left: 0px;
     display: inline-block;
-    height: 50px;
-    top: -20px;
+    top: 0px;
+    background:  rgb(40, 58, 62);
+    padding:  10px 15px 10px 15px;
+    margin:  0;
+    border-radius: 0px 0px 6px 0px;
 }
 
-#eac-nav .eac-name-container p {
+.eac-name-container p {
     position: relative;
     float: left;
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     font-family: DolceVita;
+    padding:  0;
+    margin:  0;
     
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -57,41 +51,6 @@ body {
     -ms-user-select: none;
     user-select: none;
     cursor: default;
-}
-
-#eac-nav .eac-nav-button-container {
-    position: relative;
-    left: 380px;
-    padding-top: 15px;
-    height: 100%;
-    background: transparent;
-    z-index: 2;
-}
-
-#eac-nav .eac-nav-button-container .eac-nav-button {
-    position: relative;
-    float: left;
-    display: inline-block;
-    background: transparent;
-    z-index: 2;
-}
-
-#eac-nav .eac-nav-button-container .eac-nav-button span {
-    color: white;
-    padding: 2px 11px;
-    margin-left: 7px;
-    font-family: DolceVitaBold;
-    font-size: 18px;
-    font-weight: bold;
-    
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    
 }
 
 #eac-nav .eac-nav-button-container .eac-nav-helper {
@@ -123,7 +82,7 @@ body {
     width: 100%;
     max-width: 950px;
     height: 100%;
-    top: 50px;
+    top: 0px;
 
     background: #EDEFE5;
 
@@ -145,7 +104,6 @@ body {
     position: absolute;
     display: block;
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -153,11 +111,11 @@ body {
 #eac-body .eac-content-container .eac-content-body {
     position: absolute;
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 100px;
     z-index: 0;
 
     font-family: 'Open Sans';
@@ -172,7 +130,7 @@ body {
     position: relative;
     width: 100%;
     height: 275px;
-    overflow:hidden;
+    overflow:scroll;
 
     border-bottom: 1px solid black;
     border-left:  1px solid black;
@@ -183,8 +141,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    filter: drop-shadow(0px -15px 10px #778899);
 }
 
 #eac-body .eac-content-container #HOME.eac-content img {
@@ -209,142 +168,6 @@ body {
 
 #eac-body .eac-content-container #HOME.eac-content .eac-content-body a {
     color: black;
+    font-style: bold;
     padding-right: 0;
-}
-
-#eac-body .eac-content-container #WORK.eac-content {
-    overflow-x: hidden;
-}
-
-#eac-body .eac-content-container #WORK.eac-content .eac-background {
-    position: absolute;
-    float: left;
-    width: 100%;
-    height: 100%;
-    background: url("../images/congruent_pentagon.png");
-
-    box-shadow: 0px 0px 20px #444;
-}
-
-#eac-body .eac-content-container #WORK.eac-content .eac-work {
-    position: relative;
-    float: left;
-    width: 20%;
-    height: 150px;
-    padding: 0;
-    margin: 0;
-    z-index: 999;
-    background-size: 100% 100%;
-    background-color: grey;
-    box-shadow: inset 0px 0px 10px #777;
-}
-
-#eac-body .eac-content-container #WORK.eac-content .eac-work span {
-    position: absolute;
-    left: 0;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    color: white;
-    font-family: 'DolceVitaLight', Arial;
-    font-size: 15px;
-    bottom: 0px;
-}
-
-#eac-body .eac-content-container #WORK.eac-content .eac-work.blurred {
-    opacity:0.6;
-}
-
-#eac-body .eac-content-container #WORK.eac-content .eac-work-folder {
-    position: relative;
-    float: left;
-    display:none;
-    width: 100%;
-    margin-top:1px;
-    height:auto;
-    left: 0;
-    border-top: solid 5px #00afcc;
-    border-bottom: solid 3px #00afcc;
-    margin: 0;
-    z-index: 999;
-    background-color: grey;
-    background-position: center center;
-}
-
-#eac-body .eac-content-container #WORK.eac-content .eac-work-folder > .eac-work {
-    border: 1px dashed black;
-    margin:-1px;
-}
-
-#eac-body .eac-content-container #CONTACT.eac-content .eac-sidebar {
-    position: absolute;
-    float: left;
-    height: 300px;
-    width: 100%;
-    top: 200px;
-    background: #006E7F;
-
-
-    box-shadow: 0px 0px 25px #222222;
-}
-
-#eac-body .eac-content-container #CONTACT.eac-content .eac-background {
-    position: absolute;
-    float: left;
-    width: 100%;
-    height: 100%;
-    background: url("../images/stardust.png");
-
-    box-shadow: 0px 0px 20px #444;
-}
-
-#eac-body .eac-content-container #CONTACT.eac-content img.eac-headshot {
-    position: relative;
-    float: left;
-    width: 300px;
-    height: 100%;
-
-    box-shadow: 0px 0px 20px #444;
-}
-
-#eac-body .eac-content-container #CONTACT.eac-content h2 {
-    position: relative;
-    float: top;
-    left: 50px;
-    margin-top: 15px;
-    margin-left: 10px;
-    font-family: DolceVitaLight;
-    font-size: 30px;
-    color: white;
-    margin-bottom: 0px;
-}
-
-
-#eac-body .eac-content-container #CONTACT.eac-content h3 {
-    position: relative;
-    float: top;
-    left: 50px;
-    margin-left: 10px;
-    margin-top: 0px;
-    top: 0px;
-    font-family: DolceVitaLight;
-    color: white;
-}
-
-#eac-body .eac-content-container #CONTACT.eac-content table {
-    position: relative;
-    float: top;
-    margin-top: 5px;
-    padding-left: 47px;
-}
-
-#eac-body .eac-content-container #CONTACT.eac-content td,a,span {
-    font-family: 'Open Sans', Helvetica;
-    color: white;
-    font-weight: 200;
-    text-decoration: none;
-    padding-right: 10px;
-}
-
-.ps-scrollbar-y-rail,.ps-scrollbar-x-rail {
-    z-index:99999999;
 }
