@@ -92,4 +92,24 @@ $(window).load(function() {
      easing: "easeOutQuad"
    });
 
+
+   $('.service-1').click(function() {
+     $('.smalldesc').animate({
+      height: 483,
+      boxShadow: 'none'
+     },{
+      duration: 1500,
+      queue: false,
+      easing: "easeOutQuad"
+     });
+
+     $('.service-1 .row>a').animate({
+      opacity: 0
+     },{
+      duration: 1500,
+      queue: false,
+      easing: "easeOutQuad"
+     });
+   });
+
 });

@@ -172,3 +172,15 @@ body {
     font-style: bold;
     padding-right: 0;
 }
+
+.smalldesc {
+    height: 30px;
+    overflow: hidden;
+    margin-top: -20px;
+    box-shadow: inset 0px -8px 5px -5px #ccc;
+}
+
+.service-1 .row>a {
+    font-style: italic;
+    text-decoration: underline;
+}
