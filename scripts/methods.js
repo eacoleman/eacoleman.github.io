@@ -95,7 +95,7 @@ $(window).load(function() {
 
    $('.service-1').click(function() {
      $('.smalldesc').animate({
-      height: 483,
+      height: 973,
       boxShadow: 'none'
      },{
       duration: 1500,
